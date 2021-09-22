@@ -1,0 +1,32 @@
+doctype html
+html
+   head
+        title Contacts
+        style 
+            include ./style.css
+   body
+        div(class ="head") 
+            h1 Contacts
+            h1 
+                a(href="/contact" style="text-decoration:none") + Add
+        hr
+        div(class = 'group') 
+            a(href="/") All
+            a(href="/family") Family
+            a(href="/friend") Friend
+            a(href="/work") Work
+        hr
+                
+        each val in allcontacts 
+                img(src=`/${val.propic}`  width='100px')
+                p Name - #{val.name} 
+                br
+                div(style = "display: flex") 
+
+                    a(href=`/deletecontact/${val._id}` style="text-decoration:none") Delete &nbsp &nbsp
+                    br
+                    a(href=`/updatecontact/${val._id}` style="text-decoration:none") Update &nbsp &nbsp
+                    br
+                    a(href=`/viewdb/${val._id}` style="text-decoration:none") View  &nbsp  &nbsp
+                hr
+        

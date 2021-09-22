@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="income.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="sidebar close">
+          <div class="logo-details">
+              <i class='bx bxl-bitcoin'></i>
+              <span class="logo_name">Money Manager</span>
+          </div>
+          <ul class="nav-links">
+      
+              <li>
+                  <a href="side.html">
+                      <i class='bx bxs-dashboard'></i>
+                      <span class="link_name">Dashboard</span>
+                  </a>
+                  <ul class="sub-menu blank">
+                      <li><a class="link_name" href="side.html">Dashboard</a></li>
+                  </ul>
+              </li>
+              <li>
+      
+              <li>
+                  <a href="income.html">
+                      <i class='bx bx-italic'></i>
+                      <span class="link_name">Income</span>
+                  </a>
+                  <ul class="sub-menu blank">
+                      <li><a class="link_name" href="income.html">Income</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <div class="iocn-link">
+                      <a href="exp.html">
+                          <i class='bx bxs-data'></i>
+                          <span class="link_name">Expenses</span>
+                      </a>
+                  </div>
+                  <ul class="sub-menu">
+                      <li><a class="link_name" href="exp.html">Expenses</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <div class="iocn-link">
+                      <a href="budget.html">
+                          <i class='bx bxs-component'></i>
+                          <span class="link_name">Budget</span>
+                      </a>
+      
+                  </div>
+                  <ul class="sub-menu">
+                      <li><a class="link_name" href="budget.html">Budget</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="index.html">
+                      <i class='bx bx-transfer-alt'></i>
+                      <span class="link_name">Transactions</span>
+                  </a>
+                  <ul class="sub-menu blank">
+                      <li><a class="link_name" href="index.html">Transactions</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="account.html">
+                      <i class='bx bx-rupee'></i>
+                      <span class="link_name">Account</span>
+                  </a>
+                  <ul class="sub-menu blank">
+                      <li><a class="link_name" href="account.html">Account</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <div class="iocn-link">
+                      <a href="MMM.html">
+                          <i class='bx bxs-doughnut-chart'></i>
+                          <span class="link_name">Chart</span>
+                      </a>
+                      <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                  </div>
+                  <ul class="sub-menu">
+                      <li><a class="link_name" href="MMM.html">Chart</a></li>
+                      <!-- <li><a href="#">Categories</a></li>
+                    <li><a href="#">Time(Future)</a></li>
+                    <li><a href="#">Forecasts</a></li> -->
+                  </ul>
+              </li>
+      
+              <li>
+                  <a href="help.html">
+                      <i class='bx bxs-help-circle'></i>
+                      <span class="link_name">Help</span>
+                  </a>
+                  <ul class="sub-menu blank">
+                      <li><a class="link_name" href="help.html">Help</a></li>
+                  </ul>
+              </li>
+              <li>
+      
+              <li>
+                  <div class="profile-details">
+                      <div class="profile-content">
+                          <!--<img src="image/profile.jpg" alt="profileImg">-->
+                          <i class='bx bxs-user-circle'></i>
+                      </div>
+                      <div class="name-job">
+                          <div class="profile_name">Username</div>
+                          <div class="job">programmer</div>
+                      </div>
+                      <i class='bx bx-log-out'></i>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  
+      <section class="home-section">
+          <div class="home-content">
+              <i class='bx bx-menu'></i>
+              <span class="text">New Income</span>
+          </div>
+          <div class="back">
+          <a href="income.html" style="text-decoration: none; ">
+            <button type="button" class="backbutton">Back</button>
+          </a>
+          </div>
+
+          <div class="add-form">
+            <div class="title">ADD INCOME</div>
+            <div class="form">
+                <div class="inputfield">
+                    <label>Category</label>
+                    <select class="tab">
+                        <option selected disabled>Select Category</option>
+                        <option>Salary</option>
+                        <option>Business</option>
+                        <option>Gift</option>
+                        <option>Bonus</option>
+                        <option>Pension</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+
+                <div class="inputfield">
+                    <label>Amount:</label>
+                    <input class="tab" type="number" placeholder="Enter the Amount" required>
+                </div>
+
+                <div class="inputfield">
+                    <label>Account Type</label>
+                    <div class="radio">
+                        
+                        <input type="radio" name="option" id="bank" checked>
+                        <label for="bank"> Bank</label>
+                                        
+                        <input type="radio" name="option" id="wallet">
+                        <label for="wallet"> Wallet</label>
+                     
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label>Date:</label>
+                    <input class="tab" type="date">
+                </div>
+                <div class="savebutton">
+                    <button type="submit">Save</button>&nbsp;&nbsp;
+                    <button type="submit">Cancel</button>
+                </div>
+
+            </div>
+          </div>
+      </section>
+    <script src="income.js"></script>
+</body>
+</html>

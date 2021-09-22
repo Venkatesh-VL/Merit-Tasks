@@ -1,0 +1,12 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+.group{
+    display: flex;
+    justify-content: space-around;
+}

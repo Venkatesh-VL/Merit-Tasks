@@ -1,0 +1,22 @@
+html    
+    body 
+        form(action= `/update/${usr.id}` method="POST" enctype="multipart/form-data")
+            label ID 
+            input(type="text" value=`${usr._id}` name="id")
+            label Phone
+            input(type="number" name="pno" value=`${usr.name}`)
+            br
+            label Email
+            input(type="text" name="email" value=`${usr.email}`)
+            br
+            label Profile 
+            input(type="file", name="propic" value=`${usr.propic}`)
+            br
+            label(for="group") Group 
+            select(name="group") 
+                option(selected disabled value=`${usr.group}`) #{usr.group}
+                option(value="friend") Friend
+                option(value="work") Work
+                option(value="family") Family
+            br
+            button Update Contact
